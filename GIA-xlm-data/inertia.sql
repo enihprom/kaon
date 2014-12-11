@@ -1,0 +1,8 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE imus (name TEXT, dom NUMERIC);
+CREATE TABLE imu1 (unixtime NUMERIC, tstart NUMERIC, x NUMERIC, y NUMERIC, z NUMERIC);
+CREATE TABLE imu2 (unixtime NUMERIC, tstart NUMERIC, x NUMERIC, y NUMERIC, z NUMERIC);
+CREATE INDEX i1imu2 ON imu2(tstart ASC);
+CREATE INDEX i1imu1 on imu1(tstart asc);
+COMMIT;

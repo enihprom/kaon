@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+
+# transforms AndroSensor, SensorLogger, etc.-files 
+# into easyly sqlite importable .csv's
+
+
+import sys
+
+def xform(f):
+	lines = f.readlines()
+	#TODO check these lines
+	dlines = lines[2:]
+	print("unixtime, tstart, x, y, z")
+	for line in dlines:
+		trimmed = line[:-2]
+		print(str(trimmed))
+
+try:
+	datafile = sys.argv[1]
+	f = open(datafile, "r")
+	xform(f)
+	f.close()
+except IndexError:
+	print ("usage: ", sys.arv[0], " [.csv-datafile]")

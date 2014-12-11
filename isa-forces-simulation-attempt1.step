@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE StepCoreXML>
+<world xmlns="http://edu.kde.org/step/StepCoreXML" version="1.0" id="1">
+    <name>world1</name>
+    <color>#ffffffff</color>
+    <time>0</time>
+    <timeScale>1</timeScale>
+    <errorsCalculation>false</errorsCalculation>
+    <item class="Box" id="2">
+        <name>box1</name>
+        <color>#ff000000</color>
+        <position>(-1.23,0.05)</position>
+        <angle>0</angle>
+        <velocity>(0,0)</velocity>
+        <angularVelocity>0</angularVelocity>
+        <mass>1</mass>
+        <inertia>0.166666666666667</inertia>
+        <size>(0.2,2.84)</size>
+    </item>
+    <item class="Box" id="3">
+        <name>box2</name>
+        <color>#ff000000</color>
+        <position>(1.13,0.075)</position>
+        <angle>0</angle>
+        <velocity>(0,0)</velocity>
+        <angularVelocity>0</angularVelocity>
+        <mass>1</mass>
+        <inertia>0.166666666666667</inertia>
+        <size>(0.2,2.83)</size>
+    </item>
+    <item class="CoulombForce" id="4">
+        <name>coulombForce1</name>
+        <color>#ff000000</color>
+        <coulombConst>8987551787</coulombConst>
+        <coulombConstVariance>8077608712.40069</coulombConstVariance>
+    </item>
+    <item class="ChargedParticle" id="5">
+        <name>chargedParticle2</name>
+        <color>#ff000000</color>
+        <position>(0,0.12)</position>
+        <velocity>(0,0)</velocity>
+        <mass>1</mass>
+        <charge>0</charge>
+    </item>
+    <item class="ChargedParticle" id="6">
+        <name>chargedParticle3</name>
+        <color>#ff000000</color>
+        <position>(0.01,-0.9)</position>
+        <velocity>(0,-0.61)</velocity>
+        <mass>1</mass>
+        <charge>0</charge>
+    </item>
+    <item class="ChargedParticle" id="7">
+        <name>chargedParticle1</name>
+        <color>#ff000000</color>
+        <position>(-0.74,0.76)</position>
+        <velocity>(0,0)</velocity>
+        <mass>1</mass>
+        <charge>0</charge>
+    </item>
+    <item class="ChargedParticle" id="8">
+        <name>chargedParticle4</name>
+        <color>#ff000000</color>
+        <position>(-0.77,-0.44)</position>
+        <velocity>(0,0)</velocity>
+        <mass>1</mass>
+        <charge>0</charge>
+    </item>
+    <item class="ChargedParticle" id="9">
+        <name>chargedParticle5</name>
+        <color>#ff000000</color>
+        <position>(0.48,0.79)</position>
+        <velocity>(0,0)</velocity>
+        <mass>1</mass>
+        <charge>0</charge>
+    </item>
+    <item class="ChargedParticle" id="10">
+        <name>chargedParticle6</name>
+        <color>#ff000000</color>
+        <position>(0.43,-0.47)</position>
+        <velocity>(0,0)</velocity>
+        <mass>1</mass>
+        <charge>0</charge>
+    </item>
+    <item class="ChargedParticle" id="11">
+        <name>chargedParticle7</name>
+        <color>#ff000000</color>
+        <position>(0,1.25)</position>
+        <velocity>(-0.01,0.73)</velocity>
+        <mass>1</mass>
+        <charge>0</charge>
+    </item>
+    <item class="Box" id="12">
+        <name>box3</name>
+        <color>#ff000000</color>
+        <position>(-0.045,1.595)</position>
+        <angle>0</angle>
+        <velocity>(0,0)</velocity>
+        <angularVelocity>0</angularVelocity>
+        <mass>1</mass>
+        <inertia>0.166666666666667</inertia>
+        <size>(2.57,0.25)</size>
+    </item>
+    <item class="Box" id="13">
+        <name>box4</name>
+        <color>#ff000000</color>
+        <position>(-0.045,-1.405)</position>
+        <angle>0</angle>
+        <velocity>(0,0)</velocity>
+        <angularVelocity>0</angularVelocity>
+        <mass>1</mass>
+        <inertia>0.166666666666667</inertia>
+        <size>(2.57,0.13)</size>
+    </item>
+    <item class="WeightForce" id="14">
+        <name>weightForce1</name>
+        <color>#ff000000</color>
+        <weightConst>9.80665</weightConst>
+        <weightConstVariance>1e-10</weightConstVariance>
+    </item>
+    <solver class="AdaptiveEulerSolver" id="15">
+        <name>solver1</name>
+        <stepSize>1</stepSize>
+        <toleranceAbs>0.001</toleranceAbs>
+        <toleranceRel>0.001</toleranceRel>
+    </solver>
+    <collisionSolver class="GJKCollisionSolver" id="16">
+        <name>collisionSolver1</name>
+        <toleranceAbs>0.001</toleranceAbs>
+    </collisionSolver>
+    <constraintSolver class="CGConstraintSolver" id="17">
+        <name>constraintSolver1</name>
+    </constraintSolver>
+</world>
